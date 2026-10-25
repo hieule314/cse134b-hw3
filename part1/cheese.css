@@ -1,0 +1,75 @@
+/*
+  Name: Hieu Le
+  Repository: https://github.com/hieule314/cse134b-hw3
+*/
+
+/* Set inherited typography and center the page with padding. */
+body {
+    font-family: "Times New Roman";
+    color: darkred;
+    line-height: 1.5 ;
+    background-color: white ;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Set heading sizes in rem. */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Italicize both Latin terms. */
+.latin {
+  font-style: italic;
+}
+
+/* Give the warning a distinct background and border. */
+#warning {
+  background-color: #ffe2a3;
+  padding: 1rem;
+  border-left: 0.3rem solid #875200;
+}
+
+/* Add a border, outer margin, and inner padding to the quotation. */
+blockquote {
+  border: 2px solid #875200;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+}
+
+/* Set the link color. */
+a {
+  color: #754000;
+}
+
+/* Change link appearance when hovered. */
+a:hover {
+  color: #492700;
+  text-decoration-thickness: 0.15em;
+}
+
+/* Show a visible outline on links and form controls when focused. */
+a:focus,
+input:focus,
+button:focus {
+  outline: 3px solid #005a9c;
+  outline-offset: 3px;
+}
+
+/* Set the button's initial background, border, and padding. */
+button {
+  background-color: #eeeeee;
+  border: 1px solid #875200;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+/* Equal specificity: this later button rule wins for background-color. */
+button {
+  background-color: #f4c95d;
+}
