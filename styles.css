@@ -242,6 +242,9 @@ iframe:focus {
 
 .intro-name {
   display: block;
+  width: fit-content;
+  max-width: 100%;
+  padding-inline-end: 0.12em;
   color: var(--forest);
   font-size: 6rem;
   line-height: 1;
@@ -853,6 +856,71 @@ body > footer p {
   }
   to {
     transform: translate(0, 0) rotate(0);
+  }
+}
+
+/* Reveal the existing name once; reserve its full space to avoid layout shifts.
+   Reduced motion and print keep the complete, static name with no cursor. */
+@media screen and (prefers-reduced-motion: no-preference) {
+  .intro-name {
+    --typed-width: 100%;
+    position: relative;
+    clip-path: inset(-0.1em calc(100% - var(--typed-width)) -0.1em 0);
+    animation: type-name 1.6s step-end 350ms backwards;
+  }
+
+  .intro-name::after {
+    position: absolute;
+    top: 0.12em;
+    left: var(--typed-width);
+    width: 0.04em;
+    height: 0.78em;
+    background: currentColor;
+    content: "";
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: cursor-blink 600ms step-end 350ms 5;
+  }
+}
+
+@keyframes type-name {
+  /* Match this pixel font's letter widths so each step reveals a whole letter. */
+  0% {
+    --typed-width: 0%;
+  }
+  12.5% {
+    --typed-width: 16.17%;
+  }
+  25% {
+    --typed-width: 21.63%;
+  }
+  37.5% {
+    --typed-width: 37.8%;
+  }
+  50% {
+    --typed-width: 53.96%;
+  }
+  62.5% {
+    --typed-width: 59.12%;
+  }
+  75% {
+    --typed-width: 74.44%;
+  }
+  87.5% {
+    --typed-width: 90.61%;
+  }
+  100% {
+    --typed-width: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
