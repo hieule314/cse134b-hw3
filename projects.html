@@ -28,8 +28,8 @@
         </ul>
       </nav>
     </header>
-    <main id="main-content">
-      <div class="page-intro">
+    <main id="main-content" tabindex="-1">
+      <header class="page-intro">
         <h1>Projects &amp; resume</h1>
         <p>
           I work on full stack applications and AI/ML projects. Here are some of
@@ -42,131 +42,126 @@
             <li><a href="#experience">Professional experience</a></li>
           </ul>
         </nav>
-      </div>
+      </header>
 
       <section id="projects" aria-labelledby="projects-heading">
         <h2 class="section-heading" id="projects-heading">My projects</h2>
-        <div class="project-list">
-          <article
-            class="project-entry"
-            id="watchtower"
-            aria-labelledby="watchtower-heading"
-          >
-            <div class="project-art art-watchtower" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="project-body">
-              <h3 id="watchtower-heading">WatchTower</h3>
-              <p>
-                <time datetime="2026-03">March 2026</time> –
-                <time datetime="2026-06">June 2026</time>
-              </p>
-              <p>
-                A platform to track errors, performance metrics, and user
-                events.
-              </p>
-              <ul>
-                <li>
-                  Led frontend development for a
-                  <strong>Best Team-winning</strong> platform.
-                </li>
-                <li>
-                  Integrated browser SDK telemetry, Clerk authentication, and
-                  Supabase/PostgreSQL into a real-time dashboard.
-                </li>
-                <li>
-                  Built CI/CD, Playwright/Jest tests, and GitHub Pages workflows
-                  while coordinating cross-functional delivery.
-                </li>
-              </ul>
-              <dl>
-                <dt>Tech stack</dt>
-                <dd>
-                  JavaScript, HTML, CSS, Supabase, PostgreSQL, Clerk, Jest, and
-                  Playwright.
-                </dd>
-              </dl>
-            </div>
-          </article>
 
-          <article
-            class="project-entry"
-            id="reg2schedg"
-            aria-labelledby="reg2schedg-heading"
-          >
-            <div class="project-art art-calendar" aria-hidden="true"></div>
-            <div class="project-body">
-              <h3 id="reg2schedg-heading">Reg2Schedg</h3>
-              <p>
-                <time datetime="2026-04">April 2026</time> –
-                <time datetime="2026-05">May 2026</time>
-              </p>
-              <p>
-                A course-planning platform that converts schedule screenshots
-                into structured data.
-              </p>
-              <ul>
-                <li>
-                  Deployed the platform for <strong>100+ students</strong>.
-                </li>
-                <li>
-                  Built an AI research pipeline using Browser Use to extract
-                  course logistics, professor ratings, and student sentiment.
-                </li>
-                <li>
-                  Imported and normalized
-                  <strong>12,000+ course evaluations</strong> to surface GPA,
-                  enrollment, and grade distribution insights.
-                </li>
-              </ul>
-              <dl>
-                <dt>Tech stack</dt>
-                <dd>TypeScript, JavaScript, Python, SQL, and Supabase.</dd>
-                <dt>Live demo</dt>
-                <dd>
-                  <a href="https://www.reg2schedg.com/">Try Reg2Schedg</a>
-                </dd>
-              </dl>
-            </div>
-          </article>
+        <article
+          class="project-entry"
+          id="watchtower"
+          aria-labelledby="watchtower-heading"
+        >
+          <div class="project-art art-watchtower" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3 id="watchtower-heading">WatchTower</h3>
+            <p>
+              <time datetime="2026-03">March 2026</time> –
+              <time datetime="2026-06">June 2026</time>
+            </p>
+            <p>
+              A platform to track errors, performance metrics, and user events.
+            </p>
+            <ul>
+              <li>
+                Led frontend development for a
+                <strong>Best Team-winning</strong> platform.
+              </li>
+              <li>
+                Integrated browser SDK telemetry, Clerk authentication, and
+                Supabase/PostgreSQL into a real-time dashboard.
+              </li>
+              <li>
+                Built CI/CD, Playwright/Jest tests, and GitHub Pages workflows
+                while coordinating cross-functional delivery.
+              </li>
+            </ul>
+            <dl>
+              <dt>Tech stack</dt>
+              <dd>
+                JavaScript, HTML, CSS, Supabase, PostgreSQL, Clerk, Jest, and
+                Playwright.
+              </dd>
+            </dl>
+          </div>
+        </article>
 
-          <article
-            class="project-entry"
-            id="splitr"
-            aria-labelledby="splitr-heading"
-          >
-            <div class="project-art art-receipt" aria-hidden="true"></div>
-            <div class="project-body">
-              <h3 id="splitr-heading">Splitr</h3>
-              <p>
-                <time datetime="2025-04">April 2025</time> –
-                <time datetime="2025-05">May 2025</time>
-              </p>
-              <p>
-                A cross-platform app to automate receipt parsing and split group
-                expenses.
-              </p>
-              <ul>
-                <li>Developed the app with <strong>React Native</strong>.</li>
-                <li>
-                  Integrated Google Vision OCR and an OpenAI model to parse
-                  receipts into JSON with <strong>92% accuracy</strong>.
-                </li>
-                <li>
-                  Implemented Firebase authentication, SMS verification, and
-                  persistent user receipt history.
-                </li>
-              </ul>
-              <dl>
-                <dt>Tech stack</dt>
-                <dd>
-                  React Native, Expo, FastAPI, Firebase, TypeScript, HTML/CSS,
-                  and Git.
-                </dd>
-              </dl>
-            </div>
-          </article>
-        </div>
+        <article
+          class="project-entry"
+          id="reg2schedg"
+          aria-labelledby="reg2schedg-heading"
+        >
+          <div class="project-art art-calendar" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3 id="reg2schedg-heading">Reg2Schedg</h3>
+            <p>
+              <time datetime="2026-04">April 2026</time> –
+              <time datetime="2026-05">May 2026</time>
+            </p>
+            <p>
+              A course-planning platform that converts schedule screenshots into
+              structured data.
+            </p>
+            <ul>
+              <li>Deployed the platform for <strong>100+ students</strong>.</li>
+              <li>
+                Built an AI research pipeline using Browser Use to extract
+                course logistics, professor ratings, and student sentiment.
+              </li>
+              <li>
+                Imported and normalized
+                <strong>12,000+ course evaluations</strong> to surface GPA,
+                enrollment, and grade distribution insights.
+              </li>
+            </ul>
+            <dl>
+              <dt>Tech stack</dt>
+              <dd>TypeScript, JavaScript, Python, SQL, and Supabase.</dd>
+              <dt>Live demo</dt>
+              <dd>
+                <a href="https://www.reg2schedg.com/">Try Reg2Schedg</a>
+              </dd>
+            </dl>
+          </div>
+        </article>
+
+        <article
+          class="project-entry"
+          id="splitr"
+          aria-labelledby="splitr-heading"
+        >
+          <div class="project-art art-receipt" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3 id="splitr-heading">Splitr</h3>
+            <p>
+              <time datetime="2025-04">April 2025</time> –
+              <time datetime="2025-05">May 2025</time>
+            </p>
+            <p>
+              A cross-platform app to automate receipt parsing and split group
+              expenses.
+            </p>
+            <ul>
+              <li>Developed the app with <strong>React Native</strong>.</li>
+              <li>
+                Integrated Google Vision OCR and an OpenAI model to parse
+                receipts into JSON with <strong>92% accuracy</strong>.
+              </li>
+              <li>
+                Implemented Firebase authentication, SMS verification, and
+                persistent user receipt history.
+              </li>
+            </ul>
+            <dl>
+              <dt>Tech stack</dt>
+              <dd>
+                React Native, Expo, FastAPI, Firebase, TypeScript, HTML/CSS, and
+                Git.
+              </dd>
+            </dl>
+          </div>
+        </article>
+
         <p>
           <a href="https://github.com/hieule314"
             >Browse my public GitHub repositories</a
@@ -174,47 +169,47 @@
         </p>
       </section>
 
-      <section id="resume" aria-labelledby="resume-heading">
+      <section class="resume-grid" id="resume" aria-labelledby="resume-heading">
         <h2 id="resume-heading">Resume &amp; background</h2>
-        <div class="resume-grid">
-          <section aria-labelledby="education-heading">
-            <h3 id="education-heading">Education</h3>
-            <p><strong>University of California, San Diego</strong></p>
-            <dl>
-              <dt>Major</dt>
-              <dd>Mathematics–Computer Science</dd>
-              <dt>Year</dt>
-              <dd>Fourth-year student</dd>
-            </dl>
-          </section>
 
-          <section id="experience" aria-labelledby="experience-heading">
-            <h3 id="experience-heading">Professional experience</h3>
-            <article aria-labelledby="research-heading">
-              <h4 id="research-heading">Machine learning research</h4>
-              <p>
-                I worked under Ryan Kastner to develop real-time ecological
-                monitoring systems for the San Diego Zoo.
-              </p>
-            </article>
-            <article aria-labelledby="travel-heading">
-              <h4 id="travel-heading">Travel planner development</h4>
-              <p>
-                I built a travel planner with a team of developers at the San
-                Diego Supercomputer Center.
-              </p>
-              <p>
-                The project used the
-                <abbr title="MongoDB, Express, React, and Node.js">MERN</abbr>
-                stack: MongoDB, Express, React, and Node.js.
-              </p>
-            </article>
-            <article aria-labelledby="treevah-heading">
-              <h4 id="treevah-heading">AI features at Treevah</h4>
-              <p>I delivered AI features for Treevah, a B2C SaaS AI startup.</p>
-            </article>
-          </section>
-        </div>
+        <section aria-labelledby="education-heading">
+          <h3 id="education-heading">Education</h3>
+          <p><strong>University of California, San Diego</strong></p>
+          <dl>
+            <dt>Major</dt>
+            <dd>Mathematics–Computer Science</dd>
+            <dt>Year</dt>
+            <dd>Fourth-year student</dd>
+          </dl>
+        </section>
+
+        <section id="experience" aria-labelledby="experience-heading">
+          <h3 id="experience-heading">Professional experience</h3>
+          <article aria-labelledby="research-heading">
+            <h4 id="research-heading">Machine learning research</h4>
+            <p>
+              I worked under Ryan Kastner to develop real-time ecological
+              monitoring systems for the San Diego Zoo.
+            </p>
+          </article>
+          <article aria-labelledby="travel-heading">
+            <h4 id="travel-heading">Travel planner development</h4>
+            <p>
+              I built a travel planner with a team of developers at the San
+              Diego Supercomputer Center.
+            </p>
+            <p>
+              The project used the
+              <abbr title="MongoDB, Express, React, and Node.js">MERN</abbr>
+              stack: MongoDB, Express, React, and Node.js.
+            </p>
+          </article>
+          <article aria-labelledby="treevah-heading">
+            <h4 id="treevah-heading">AI features at Treevah</h4>
+            <p>I delivered AI features for Treevah, a B2C SaaS AI startup.</p>
+          </article>
+        </section>
+
         <p>
           <a href="https://www.linkedin.com/in/hieule314/"
             >View my LinkedIn profile</a

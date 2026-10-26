@@ -23,7 +23,10 @@ combinator selectors. Buttons use `em` padding; font sizes use `rem`.
 
 Entrance and hover animations use CSS only. Reduced-motion preferences disable
 entrance animation, animated scrolling, and movement on hover. All essential
-text, navigation, and links remain in the HTML.
+text, navigation, and links remain in the HTML. Text stays fully readable during
+entrance animations. Homepage project links cover their cards, navigation and
+social links have larger touch targets, and skip links move focus into the main
+content.
 
 The experiments page keeps native media, dialog, disclosure, form, SVG, MathML,
 custom-element, and template examples. The old JavaScript examples have been
@@ -52,6 +55,8 @@ site; the original HW2 repository and deployment remain separate.
 - Used Tab through the shared navigation and sample form; focus outlines were
   visible. Opened the native dialog, closed it with Escape, and expanded the
   disclosure with the keyboard.
+- Verified the skip link, full-card project links, full-card keyboard focus
+  outlines, and navigation targets at least 44px tall at the default font size.
 - Checked local file references and fragment links for missing targets, duplicate
   IDs, unbalanced tags, scripts, inline styles, and embedded style blocks.
 
@@ -60,7 +65,9 @@ Netlify deployment serves the same version before submitting.
 
 ## Asset credits
 
-- Personal photographs supplied by Hieu Le; originals are retained.
+- Personal photographs and interest images supplied by Hieu Le. The original
+  four photographs are retained; web copies of the new images are compressed
+  in `assets/images/optimized/`.
 - [Pixelify Sans](https://github.com/google/fonts/tree/main/ofl/pixelifysans)
   is served locally, with its SIL Open Font License in `assets/fonts/OFL.txt`.
 - The original HW2 sample video comes from
