@@ -35,20 +35,30 @@
           working on websites and AI/ML projects.
         </p>
         <p>
-          My experience includes machine learning research under Ryan Kastner on
-          real-time ecological monitoring systems for the San Diego Zoo,
-          building a MERN-stack travel planner with a team at the San Diego
-          Supercomputer Center, and delivering AI features for Treevah, a B2C
-          SaaS AI startup.
+          My experience includes delivering AI features for Treevah, a B2C SaaS
+          AI startup, building a MERN-stack travel planner with a team at the
+          San Diego Supercomputer Center, and machine learning research under
+          Ryan Kastner on real-time ecological monitoring systems for the San
+          Diego Zoo.
         </p>
         <figure class="portrait">
-          <img
-            src="assets/images/optimized/aboutme.jpg"
-            alt="Hieu Le wearing sunglasses outdoors by the ocean."
-            width="320"
-            height="427"
-          />
-          <figcaption>Personal portrait</figcaption>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/aboutme-480.webp 480w,
+                assets/images/aboutme.webp     900w
+              "
+              sizes="(max-width: 48rem) min(23.375rem, calc(100vw - 4.875rem)), (max-width: 76rem) calc(39vw - 4.75rem), 25rem"
+            />
+            <img
+              src="assets/images/aboutme.jpg"
+              alt="Hieu Le wearing sunglasses outdoors by the ocean."
+              width="320"
+              height="427"
+              fetchpriority="high"
+            />
+          </picture>
         </figure>
         <p><a href="projects.html">Take a look at my projects</a>.</p>
       </section>
@@ -56,22 +66,44 @@
       <section class="photo-gallery dog-gallery" aria-labelledby="dog-heading">
         <h2 id="dog-heading">My dogs</h2>
         <figure>
-          <img
-            src="assets/images/optimized/dog1.jpg"
-            width="160"
-            height="213"
-            alt="Poppy, my Pomeranian, sitting on a car seat."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/dog1-480.webp 480w,
+                assets/images/dog1.webp     900w
+              "
+              sizes="(max-width: 48rem) calc(50vw - 3rem), (max-width: 54rem) calc(50vw - 4rem), 23rem"
+            />
+            <img
+              src="assets/images/dog1.jpg"
+              width="160"
+              height="213"
+              alt="Poppy, my Pomeranian, sitting on a car seat."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <figure>
-          <img
-            src="assets/images/optimized/dog2.jpg"
-            width="160"
-            height="213"
-            alt="Peanut, my Jack Russell Terrier, posing with me in a car."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/dog2-480.webp 480w,
+                assets/images/dog2.webp     900w
+              "
+              sizes="(max-width: 48rem) calc(50vw - 3rem), (max-width: 54rem) calc(50vw - 4rem), 23rem"
+            />
+            <img
+              src="assets/images/dog2.jpg"
+              width="160"
+              height="213"
+              alt="Peanut, my Jack Russell Terrier, posing with me in a car."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <p class="photo-caption">
           I have two dogs! Poppy (Pomeranian) and Peanut (Jack Russell Terrier).
@@ -88,40 +120,84 @@
           as hiking and lifting weights.
         </p>
         <figure>
-          <img
-            src="assets/images/optimized/badminton.jpg"
-            width="320"
-            height="213"
-            alt="Jumping to hit the shuttlecock during a badminton game."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/badminton-480.webp  480w,
+                assets/images/badminton.webp     1200w
+              "
+              sizes="(max-width: 48rem) calc(100vw - 3.7rem), (max-width: 76rem) calc(50vw - 4rem), 34rem"
+            />
+            <img
+              src="assets/images/badminton.jpg"
+              width="320"
+              height="213"
+              alt="Jumping to hit the shuttlecock during a badminton game."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <figure>
-          <img
-            src="assets/images/optimized/badminton-team.jpg"
-            width="320"
-            height="329"
-            alt="Our badminton group posing together in a gym."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/badminton-team-480.webp  480w,
+                assets/images/badminton-team.webp     1167w
+              "
+              sizes="(max-width: 48rem) calc(100vw - 3.7rem), (max-width: 76rem) calc(50vw - 4rem), 34rem"
+            />
+            <img
+              src="assets/images/badminton-team.jpg"
+              width="320"
+              height="329"
+              alt="Our badminton group posing together in a gym."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <figure>
-          <img
-            src="assets/images/optimized/steph-curry.jpg"
-            width="320"
-            height="240"
-            alt="A basketball graphic of Stephen Curry reaching for the ball."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/steph-curry-480.webp 480w,
+                assets/images/steph-curry.webp     640w
+              "
+              sizes="(max-width: 48rem) calc(100vw - 3.7rem), (max-width: 76rem) calc(50vw - 4rem), 34rem"
+            />
+            <img
+              src="assets/images/steph-curry.jpg"
+              width="320"
+              height="240"
+              alt="A basketball graphic of Stephen Curry reaching for the ball."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <figure>
-          <img
-            src="assets/images/optimized/gym.jpg"
-            width="320"
-            height="427"
-            alt="Taking a mirror selfie at the gym."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/gym-480.webp 480w,
+                assets/images/gym.webp     900w
+              "
+              sizes="(max-width: 48rem) calc(100vw - 3.7rem), (max-width: 76rem) calc(50vw - 4rem), 34rem"
+            />
+            <img
+              src="assets/images/gym.jpg"
+              width="320"
+              height="427"
+              alt="Taking a mirror selfie at the gym."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
       </section>
 
@@ -135,31 +211,61 @@
           Smash Bros. Ultimate, and Roblox.
         </p>
         <figure>
-          <img
-            src="assets/images/optimized/fortnite-llama.jpg"
-            width="320"
-            height="427"
-            alt="Standing beside a large LEGO Fortnite llama."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/fortnite-llama-480.webp 480w,
+                assets/images/fortnite-llama.webp     900w
+              "
+              sizes="(max-width: 48rem) calc(100vw - 3.7rem), (max-width: 76rem) calc(33.333vw - 3.55rem), 22rem"
+            />
+            <img
+              src="assets/images/fortnite-llama.jpg"
+              width="320"
+              height="427"
+              alt="Standing beside a large LEGO Fortnite llama."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <figure>
-          <img
-            src="assets/images/optimized/minecraft.jpg"
-            width="320"
-            height="265"
-            alt="Four Minecraft characters posing together in an underground stronghold."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/minecraft-480.webp  480w,
+                assets/images/minecraft.webp     1196w
+              "
+              sizes="(max-width: 48rem) calc(100vw - 3.7rem), (max-width: 76rem) calc(33.333vw - 3.55rem), 22rem"
+            />
+            <img
+              src="assets/images/minecraft.jpg"
+              width="320"
+              height="265"
+              alt="Four Minecraft characters posing together in an underground stronghold."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <figure>
-          <img
-            src="assets/images/optimized/king-k-rool.jpg"
-            width="320"
-            height="382"
-            alt="King K. Rool, the crocodile character I play in Super Smash Bros. Ultimate."
-            loading="lazy"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="assets/images/king-k-rool.webp 409w"
+              sizes="(max-width: 48rem) calc(100vw - 3.7rem), (max-width: 76rem) calc(33.333vw - 3.55rem), 22rem"
+            />
+            <img
+              src="assets/images/king-k-rool.jpg"
+              width="320"
+              height="382"
+              alt="King K. Rool, the crocodile character I play in Super Smash Bros. Ultimate."
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </figure>
       </section>
 

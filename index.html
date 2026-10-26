@@ -38,11 +38,11 @@
             actively working on websites and AI/ML projects.
           </p>
           <p>
-            I have worked as a machine learning researcher under Ryan Kastner on
-            real-time ecological monitoring systems for the San Diego Zoo. I
-            also built a MERN-stack travel planner with a team at the San Diego
-            Supercomputer Center and delivered AI features for Treevah, a B2C
-            SaaS AI startup.
+            I delivered AI features for Treevah, a B2C SaaS AI startup, and built
+            a MERN-stack travel planner with a team at the San Diego
+            Supercomputer Center. I also worked as a machine learning researcher
+            under Ryan Kastner on real-time ecological monitoring systems for
+            the San Diego Zoo.
           </p>
           <p class="intro-links">
             <a class="button-link" href="projects.html">Explore my projects</a>
@@ -50,13 +50,23 @@
           </p>
         </div>
         <figure class="portrait">
-          <img
-            src="assets/images/optimized/aboutme.jpg"
-            width="320"
-            height="427"
-            alt="Hieu Le wearing sunglasses outdoors by the ocean."
-            fetchpriority="high"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/aboutme-480.webp 480w,
+                assets/images/aboutme.webp     900w
+              "
+              sizes="(max-width: 48rem) min(23.375rem, calc(100vw - 4.875rem)), (max-width: 76rem) calc(39vw - 4.75rem), 25rem"
+            />
+            <img
+              src="assets/images/aboutme.jpg"
+              width="320"
+              height="427"
+              alt="Hieu Le wearing sunglasses outdoors by the ocean."
+              fetchpriority="high"
+            />
+          </picture>
         </figure>
       </section>
 
@@ -106,22 +116,44 @@
         </div>
         <div class="outside-photos">
           <figure>
-            <img
-              src="assets/images/optimized/dog1.jpg"
-              width="160"
-              height="213"
-              alt="A small tan dog sitting on a car seat."
-              loading="lazy"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/images/dog1-480.webp 480w,
+                  assets/images/dog1.webp     900w
+                "
+                sizes="(max-width: 48rem) calc(50vw - 4rem), (max-width: 76rem) 22vw, 17rem"
+              />
+              <img
+                src="assets/images/dog1.jpg"
+                width="160"
+                height="213"
+                alt="A small tan dog sitting on a car seat."
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </figure>
           <figure>
-            <img
-              src="assets/images/optimized/badminton.jpg"
-              width="160"
-              height="107"
-              alt="A badminton player jumping to hit the shuttlecock in an indoor gym."
-              loading="lazy"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/images/badminton-480.webp  480w,
+                  assets/images/badminton.webp     1200w
+                "
+                sizes="(max-width: 48rem) calc(50vw - 4rem), (max-width: 76rem) 22vw, 17rem"
+              />
+              <img
+                src="assets/images/badminton.jpg"
+                width="160"
+                height="107"
+                alt="A badminton player jumping to hit the shuttlecock in an indoor gym."
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </figure>
         </div>
       </section>
